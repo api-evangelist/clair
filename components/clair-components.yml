@@ -1,0 +1,37 @@
+generated: '2026-08-09'
+method: searched
+source: https://github.com/getclair/ios-sdk-poc
+notes: >-
+  Clair's partner integration model is component-first rather than API-first for the
+  end-user surface: partners send employee/employment/attendance data over the partner
+  REST API, then embed a Clair-hosted user experience so employees can take an advance,
+  review history, make repayments and handle loan servicing. Embedding the hosted
+  component is how partners avoid becoming a licensed loan servicer themselves. The
+  component families below are the ones Clair distributes publicly; the web/WebView
+  embed itself is documented only inside the partner program.
+families:
+- family: iOS embedded experience
+  loader: Swift Package Manager (binary XCFramework)
+  components:
+  - name: Clair
+    kind: SwiftUI view
+    module: ClairSdkPoc / ClairKit
+    signature: 'Clair(partnerID:userID:location:type:)'
+    description: Embedded Clair On-Demand Pay surface rendered inside the partner's
+      own iOS application.
+    source: https://github.com/getclair/ios-sdk-poc
+  packages:
+  - ClairKit (https://github.com/getclair/clair-ios-sdk)
+  - ClairGustoKit (https://github.com/getclair/clair-gusto-kit)
+  - ClairQuickbooksKit (https://github.com/getclair/clair-sdk-ios)
+- family: Hosted WebView experience
+  loader: WebView
+  status: partner-documented
+  description: Clair-hosted UX opened in a WebView by the partner platform; the
+    component contract is published only to contracted partners.
+    Not publicly documented — recorded here as a named surface, not a captured spec.
+x-evidence:
+  fetched: '2026-08-09'
+  urls:
+  - {url: 'https://raw.githubusercontent.com/getclair/ios-sdk-poc/main/README.md', status: 200}
+  - {url: 'https://raw.githubusercontent.com/getclair/clair-ios-sdk/main/README.md', status: 200}

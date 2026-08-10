@@ -1,0 +1,43 @@
+generated: '2026-08-09'
+method: probed
+host: https://getclair.com
+notes: >-
+  Zero documents returned 200 — this file is a negative probe record, not a discovery
+  index, and carries no apis.yml WellKnown pointer. getclair.com answers /.well-known/*
+  with a clean 10-byte 404 (no single-page-app catch-all), so these are real misses.
+  api.getclair.com is fronted by Cloudflare and returns 403 to every path including a
+  control path that cannot exist, so nothing there is readable anonymously.
+documents:
+- {host: getclair.com, path: /.well-known/security.txt, status: 404}
+- {host: getclair.com, path: /.well-known/openid-configuration, status: 404}
+- {host: getclair.com, path: /.well-known/api-catalog, status: 404}
+- {host: getclair.com, path: /.well-known/ai-plugin.json, status: 404}
+- {host: getclair.com, path: /.well-known/agent-card.json, status: 404}
+- {host: getclair.com, path: /.well-known/agent.json, status: 404}
+- {host: getclair.com, path: /llms.txt, status: 404}
+- {host: getclair.com, path: /robots.txt, status: 200, note: 'User-agent: * / Allow: /'}
+- {host: api.getclair.com, path: /.well-known/agent-card.json, status: 403, note: cloudflare}
+- {host: api.getclair.com, path: /.well-known/openid-configuration, status: 403, note: cloudflare}
+- {host: api.getclair.com, path: /.well-known/oauth-authorization-server, status: 403, note: cloudflare}
+- {host: api.getclair.com, path: /zzz-control-path-does-not-exist-9987, status: 403, note: control path — proves the 403 is blanket, not path-specific}
+contract_discovery:
+  openapi:
+  - {url: 'https://api.getclair.com/openapi.json', status: 403}
+  - {url: 'https://api.getclair.com/v1/openapi.json', status: 403}
+  - {url: 'https://api.getclair.com/swagger.json', status: 403}
+  - {url: 'https://api.getclair.com/api-docs', status: 403}
+  - {url: 'https://api.getclair.com/redoc', status: 403}
+  - {url: 'https://getclair.com/openapi.json', status: 403}
+  github_code_search:
+  - {query: 'org:getclair openapi', results: 0}
+  - {query: 'org:getclair swagger', results: 0}
+  dns:
+  - {host: developer.getclair.com, result: NXDOMAIN}
+  - {host: developers.getclair.com, result: NXDOMAIN}
+  - {host: docs.getclair.com, result: NXDOMAIN}
+  - {host: api-docs.getclair.com, result: NXDOMAIN}
+  - {host: sandbox.getclair.com, result: NXDOMAIN}
+  - {host: trust.getclair.com, result: NXDOMAIN}
+  - {host: api.getclair.com, result: resolves (Cloudflare)}
+  - {host: status.getclair.com, result: CNAME stats.uptimerobot.com}
+  - {host: partners.getclair.com, result: CNAME custom.glideapps.com}

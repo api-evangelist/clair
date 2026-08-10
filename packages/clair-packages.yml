@@ -1,0 +1,78 @@
+generated: '2026-08-09'
+method: searched
+source: https://github.com/getclair
+notes: >-
+  Clair publishes no packages to npm, PyPI, Maven Central, NuGet, RubyGems,
+  Packagist or crates.io. Its only public first-party client libraries are Swift
+  packages distributed through Swift Package Manager straight from the getclair
+  GitHub organization as binary XCFramework targets. Version + checksum values
+  below are read verbatim from each repository's Package.swift.
+packages:
+- language: swift
+  registry: swift-package-manager
+  name: ClairKit
+  repository: https://github.com/getclair/clair-ios-sdk
+  url: https://github.com/getclair/clair-ios-sdk
+  install: '.package(url: "https://github.com/getclair/clair-ios-sdk", from: "1.0.0")'
+  distribution: binaryTarget (XCFramework)
+  latest_version: 1.2.6
+  latest_released: '2026-05-14'
+  platforms: [iOS 16.0+]
+  official: true
+  description: Core iOS framework providing integration with Clair's embedded On-Demand
+    Pay experience.
+- language: swift
+  registry: swift-package-manager
+  name: ClairGustoKit
+  repository: https://github.com/getclair/clair-gusto-kit
+  url: https://github.com/getclair/clair-gusto-kit
+  install: '.package(url: "https://github.com/getclair/clair-gusto-kit", from: "1.0.0")'
+  distribution: binaryTarget (XCFramework)
+  latest_version: 1.2.0
+  latest_released: '2026-04-13'
+  platforms: [iOS 16.0+]
+  official: true
+  description: iOS kit for the Clair integration inside Gusto Embedded Payroll.
+- language: swift
+  registry: swift-package-manager
+  name: ClairQuickbooksKit
+  repository: https://github.com/getclair/clair-sdk-ios
+  url: https://github.com/getclair/clair-sdk-ios
+  install: '.package(url: "https://github.com/getclair/clair-sdk-ios", from: "0.0.1")'
+  distribution: binaryTarget (XCFramework)
+  latest_version: 0.0.31
+  latest_released: '2026-08-07'
+  platforms: [iOS 16.0+]
+  official: true
+  description: iOS kit for the Clair integration inside QuickBooks/Intuit payroll surfaces.
+- language: swift
+  registry: swift-package-manager
+  name: ClairSdkPoc
+  repository: https://github.com/getclair/ios-sdk-poc
+  url: https://github.com/getclair/ios-sdk-poc
+  install: '.package(url: "https://github.com/getclair/ios-sdk-poc")'
+  distribution: source target
+  license: MIT
+  platforms: [iOS 16.0+]
+  official: true
+  status: example
+  description: Example Swift package Clair publishes so prospective partners can test
+    an SDK integration before contracting.
+registries_checked:
+- {registry: npm, result: no first-party package found}
+- {registry: pypi, result: no first-party package found}
+- {registry: maven-central, result: no first-party package found}
+- {registry: nuget, result: no first-party package found}
+- {registry: rubygems, result: no first-party package found}
+- {registry: packagist, result: no first-party package found}
+- {registry: crates.io, result: no first-party package found}
+- {registry: pkg.go.dev, result: no first-party package found}
+x-evidence:
+  fetched: '2026-08-09'
+  org_api: https://api.github.com/orgs/getclair
+  public_repos: 16
+  files_read:
+  - https://raw.githubusercontent.com/getclair/clair-ios-sdk/main/Package.swift
+  - https://raw.githubusercontent.com/getclair/clair-gusto-kit/main/Package.swift
+  - https://raw.githubusercontent.com/getclair/clair-sdk-ios/main/Package.swift
+  - https://raw.githubusercontent.com/getclair/ios-sdk-poc/main/Package.swift

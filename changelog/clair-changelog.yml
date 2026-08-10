@@ -1,0 +1,77 @@
+generated: '2026-08-09'
+method: searched
+source: https://github.com/getclair
+scope: >-
+  Clair publishes no public API changelog or release-notes page — the partner REST
+  API is documented only to contracted partners. The only dated, public release
+  history Clair maintains is GitHub Releases on its three first-party iOS SDK
+  repositories, captured below. Treat this as an SDK changelog, not an API changelog.
+scheme: semver
+channels:
+- name: ClairKit iOS SDK releases
+  url: https://github.com/getclair/clair-ios-sdk/releases
+  current_version: 1.2.6
+- name: ClairGustoKit releases
+  url: https://github.com/getclair/clair-gusto-kit/releases
+  current_version: 1.2.0
+- name: ClairQuickbooksKit releases
+  url: https://github.com/getclair/clair-sdk-ios/releases
+  current_version: 0.0.31
+entries:
+- component: ClairQuickbooksKit
+  version: 0.0.31
+  date: '2026-08-07'
+- component: ClairKit
+  version: 1.2.6
+  date: '2026-05-14'
+- component: ClairQuickbooksKit
+  version: 0.0.30
+  date: '2026-05-06'
+- component: ClairQuickbooksKit
+  version: 0.0.29
+  date: '2026-04-29'
+- component: ClairQuickbooksKit
+  version: 0.0.28
+  date: '2026-04-24'
+- component: ClairGustoKit
+  version: 1.2.0
+  date: '2026-04-13'
+- component: ClairQuickbooksKit
+  version: 0.0.27
+  date: '2026-04-09'
+- component: ClairKit
+  version: 1.2.4
+  date: '2026-04-03'
+- component: ClairKit
+  version: 1.2.3
+  date: '2026-03-31'
+- component: ClairKit
+  version: 1.2.2
+  date: '2026-03-30'
+- component: ClairKit
+  version: 1.2.1
+  date: '2026-03-02'
+- component: ClairKit
+  version: 1.2.0
+  date: '2026-03-02'
+- component: ClairKit
+  version: 1.1.1
+  date: '2026-03-02'
+- component: ClairKit
+  version: 1.1.0
+  date: '2026-02-26'
+- component: ClairKit
+  version: 1.0.1
+  date: '2026-02-01'
+- component: ClairKit
+  version: v1.0.0
+  date: '2026-01-31'
+- component: ClairGustoKit
+  version: v1.1.2
+  date: '2025-10-10'
+notes: >-
+  Releases carry tag + date only; Clair publishes no per-release notes body, so no
+  breaking-vs-additive classification can be recorded without fabricating one.
+x-evidence:
+  fetched: '2026-08-09'
+  api: https://api.github.com/repos/getclair/{repo}/releases

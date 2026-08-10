@@ -1,0 +1,30 @@
+generated: '2026-08-09'
+method: probed
+source: https://status.getclair.com/
+versioning:
+  scheme: semver
+  scope: iOS SDK packages only
+  current:
+    ClairKit: 1.2.6
+    ClairGustoKit: 1.2.0
+    ClairQuickbooksKit: 0.0.31
+  docs: null
+  note: >-
+    No public versioning policy for the partner REST API. The API version scheme is
+    documented only inside the partner program.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation or Sunset/Deprecation (RFC 8594) policy found.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.getclair.com/
+status_page_platform: UptimeRobot
+deprecated_operations: []
+x-evidence:
+  fetched: '2026-08-09'
+  urls:
+  - {url: 'https://status.getclair.com/', status: 200, content_type: 'text/html; charset=utf-8'}
+  - {url: 'https://getclair.com/.well-known/security.txt', status: 404}
+  - {url: 'https://getclair.com/robots.txt', status: 200}
