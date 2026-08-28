@@ -11,6 +11,17 @@ description: 'Clair Inc is a New York-based financial technology company that pr
   distributed for iOS as Swift packages) so employees can take an advance, review history
   and handle loan servicing without a separate login. Clair has raised roughly $218M
   in total capital, including a $23.2M Series B in May 2025.'
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://avatars.githubusercontent.com/getclair
 url: https://raw.githubusercontent.com/api-evangelist/clair/refs/heads/main/apis.yml
 x-type: company
