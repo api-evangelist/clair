@@ -64,5 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Clair is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/clair-stock
+Clair Inc is a New York-based financial technology company that provides free, compliant On-Demand Pay (earned wage access) as an embedded service inside the payroll, time-and-attendance and workforce-management platforms employees already use. Rather than selling a consumer app, Clair partners with platforms — Gusto Embedded Payroll, Check, 7shifts and others — and connects to them over a partner REST API that transmits employee, employment and attendance data, which Clair's underwriting engine uses to originate 0% APR earned wage advances through its FDIC-insured partner bank, Pathward N.A. Partners embed a Clair-hosted user experience (a WebView component, distributed for iOS as Swift packages) so employees can take an advance, review history and handle loan servicing without a separate login. Clair has raised roughly $218M in total capital, including a $23.2M Series B in May 2025.
+
+**Areas:** Company · Financial Services · Fintech · Earned Wage Access · On-Demand Pay · Payroll · Embedded Finance · Banking · Human Resources
+
+## Clair on APIs.io
+
+Everything profiled for Clair is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/clair/](https://apis.io/providers/clair/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Clair Domain Security](https://apis.io/security/clair/clair-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://getclair.com/)
+- [Support](https://getclair.com/knowledge)
+- [Privacy policy](https://cdn.prod.website-files.com/66cded96fc6449eec10d942a/68c9b8fc52b7e5dcd7093db6_Privacy%20Policy.All%20(9.9.25).pdf)
+- [GitHub](https://github.com/getclair)
+- [Status](https://status.getclair.com/)
+
+## API Evangelist rating
+
+**Kin Score 10.9** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 7.9** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/clair/](https://apis.io/providers/clair/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Clair: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/clair/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
